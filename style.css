@@ -58,3 +58,15 @@ button {
 .popular {
   margin-top: 10%;
 }
+
+.row {
+  display: flex;
+}
+
+.row img {
+  width: 75%;
+}
+
+.column {
+  flex: 50%;
+}
