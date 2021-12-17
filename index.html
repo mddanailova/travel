@@ -2,11 +2,64 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title> ONWAY </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
   </head>
   <body>
 
+    <section>
+      <header>
+          <img src="logoer/4.png" class="logo">
+          <div class="headertxt">
+            <h1 class="maintxt">Discover, <br> organize & <br> structure your trip</h1>
+            <h2 class="undermaintxt">Start planning your trip</h1>
+            <input type="text" class="searchbar" placeholder="Search all places">
+          </div>
+          <img src="billeder/7.jpg" class="mainimg">
+      </header>
 
+      <div class="indhold">
+        <h1>Trending this week</h1>
+        <div class="slideshow">
+            <img class="slideshowpic" src="billeder/1.jpg">
+            <img class="slideshowpic" src="billeder/9.jpg">
+            <img class="slideshowpic" src="billeder/3.jpg">
+
+            <button class="leftbutton" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="rightbutton" onclick="plusDivs(1)">&#10095;</button>
+        </div>
+
+      <div class="popular">
+        <h1>Most popular</h1>
+
+        </div>
+      </div>
+    </section>
+
+    <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("slideshowpic");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      x[slideIndex-1].style.display = "block";
+    }
+    </script>
 
   </body>
 </html>
