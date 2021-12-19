@@ -98,3 +98,39 @@ button.submit{
     cursor: pointer;
 }
 
+/* https://www.w3schools.com/howto/howto_css_custom_checkbox.asp */
+
+input[type=checkbox], label {
+    display: block;
+    cursor: pointer;
+    color: white;
+    margin-left: 5px;
+  }
+  
+input[type=checkbox] {
+    display: none;
+  }
+  
+input[type=checkbox] + label:before {
+    content: 'X';
+    background-position: center;
+    border: 1px solid white;
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    padding-left: 0.1em;
+    padding-bottom: 0.1em;
+    margin-right: 0.2em;
+    vertical-align: bottom;
+    color: transparent;
+    transition: 0.2s;
+  }
+  
+input[type=checkbox] + label:active:before {
+    transform: scale(0);
+  }
+  
+input[type=checkbox]:checked + label:before {
+    color: #fff;
+  }
+
