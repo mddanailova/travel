@@ -7,3 +7,37 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/* https://www.w3schools.com/css/css_grid.asp */
+/* https://www.w3schools.com/css/css3_flexbox.asp */
+
+img{
+    width: 70%;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+p{
+    color: white;
+    margin-left: 2px;
+    margin-bottom: 5px;
+}
+
+body{
+    min-height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2.5fr;
+    background-image: url("./Images/Background.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
