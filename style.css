@@ -87,29 +87,21 @@ button {
 
 .navbar {
   width: 100%;
+  padding: 0.8em;
   background-color: #73605c;
   overflow: auto;
+  position: fixed;
+  bottom: 0;
 }
 
 .navbar a {
   text-align: center;
-  padding: 10%;
+  padding: 7.5%;
   color: #F2EBDF;
   text-decoration: none;
-  font-size: 2em;
-}
-
-.navbar a:hover {
-  background-color: #000;
+  font-size: 4.3em;
 }
 
 .active {
   background-color: white;
-}
-
-@media screen and (max-width: 500px) {
-  .navbar a {
-    float: none;
-    display: block;
-  }
 }
