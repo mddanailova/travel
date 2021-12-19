@@ -25,6 +25,8 @@ p{
     margin-bottom: 5px;
 }
 
+/* Giving body display grid and adding background */
+
 body{
     min-height: 100vh;
     width: 100%;
@@ -35,6 +37,8 @@ body{
     background-position: center;
 }
 
+/* Giving display flex to the section */
+
 section{
     display: flex;
     justify-content: center;
@@ -42,6 +46,8 @@ section{
 }
 
 /* https://www.w3schools.com/howto/howto_css_login_form.asp */
+
+/* Making the login container */
 
 .login-container{
     max-width: 300px;
@@ -70,6 +76,8 @@ input, button{
     font-size: 1.1em;
 }
 
+/* Giving the input width and padding */
+
 input {
     width: 100%;
     background: #AAB9BF;
@@ -78,6 +86,8 @@ input {
     color: white;  
 }
 
+/* Styling the icons within the input field */
+
 input ~ i{
     position: absolute;
     left: 20px;
@@ -85,6 +95,8 @@ input ~ i{
     transform: translateY(-50%);
     color: white;
 }
+
+/* Styling the sign in button */
 
 button.submit{
     width: 100%;
@@ -100,17 +112,23 @@ button.submit{
 
 /* https://www.w3schools.com/howto/howto_css_custom_checkbox.asp */
 
+/* Styling the input and label */
+
 input[type=checkbox], label {
     display: block;
     cursor: pointer;
     color: white;
     margin-left: 5px;
   }
-  
+
+/* Giving checkbox display none, so its hidden by default */
+
 input[type=checkbox] {
     display: none;
   }
-  
+
+/* Creating a custom checkbox */
+
 input[type=checkbox] + label:before {
     content: 'X';
     background-position: center;
