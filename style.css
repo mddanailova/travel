@@ -152,3 +152,64 @@ input[type=checkbox]:checked + label:before {
     color: #fff;
   }
 
+/*  https://www.w3schools.com/howto/howto_js_popup_form.asp */
+  
+  /* The popup form - hidden by default */
+  .form-popup {
+    display: none;
+    position: fixed;
+    bottom: 170px;
+    z-index: 9;
+  }
+  
+  /* Add styles to the form container */
+  .form-container {
+    border-radius: 30px;
+    max-width: 280px;
+    padding: 10px;
+    background-color: #AAB9BF;
+  }
+
+  /* Adding styles to the heading and text */
+  h1{
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+  }
+
+  .text{
+      text-align: center;
+      padding: 0 0 30px;
+  }
+  
+  /* Full-width input fields */
+  .form-container input[type=text], .form-container input[type=password] {
+    width: 100%;
+    padding: 5px;
+    margin: 10px 0 5px 0;
+    border:1px solid white;
+  }
+  
+  
+  /* Styling the submit/login button */
+  .form-container .btn {
+    background-color: transparent;
+    border-radius: 30px;
+    border: 1px solid white;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 70%;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  button.create{
+    background-color: transparent;
+    color: white;
+    margin: auto;
+    font-weight: bold;
+    cursor: pointer;
+}
+
