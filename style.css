@@ -41,3 +41,60 @@ section{
     align-items: center;
 }
 
+/* https://www.w3schools.com/howto/howto_css_login_form.asp */
+
+.login-container{
+    max-width: 300px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-control{
+    width: 100%;
+    position: relative;
+    margin-bottom: 24px;
+}
+
+input, button{
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+
+input {
+    width: 100%;
+    background: #AAB9BF;
+    letter-spacing: 0.5px;
+    padding: 14px 64px;
+    color: white;  
+}
+
+input ~ i{
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+}
+
+button.submit{
+    width: 100%;
+    background-color: transparent;
+    padding: 14px 64px;
+    margin: 25px auto;
+    letter-spacing: 2px;
+    font-weight: bold;
+    border: 2px solid white;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
