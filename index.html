@@ -36,4 +36,34 @@
             </form>
         </div>
   </section>
+  
+<!-- https://www.w3schools.com/howto/howto_js_popup_form.asp -->
+<!-- Form-container with signup options -->
+
+<section>
+  <button class="create" onclick="openForm()">
+      First time?
+      <br>
+      Create free account</button>
+
+  <div class="form-popup" id="Form">
+    <form class="form-container">
+      <h1>Welcome</h1>
+      <p class="text">Create your account</p>
+
+      <label for="email"><i class="fas fa-user"></i>   Username</label>
+      <input type="text" placeholder="">
+      
+      <label for="email"><i class="fas fa-envelope"></i>   Email</label>
+      <input type="text" placeholder="">
+  
+      <label for="psw"><i class="fas fa-lock"></i>   Password</label>
+      <input type="password" placeholder="">
+  
+      <button type="submit" class="btn" onclick="closeForm()">Sign Up</button>
+    </form>
+  </div>
+</section>
+
+  
 </body>
