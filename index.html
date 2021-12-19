@@ -1,12 +1,39 @@
-<<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Login</title>
+</head>
 
+<!-- Login-form with icons and button -->
+<!-- https://www.w3schools.com/howto/howto_css_login_form.asp -->
 
-
-  </body>
-</html>
+<body>
+  <section>
+    <img src="./Images/logo.png" alt="logo">
+    </section>
+    <section class="main">
+        <div class="login-container">
+            <form class="login-form">
+                <p>Username</p>
+                <div class="form-control">
+                    <input type="text" placeholder="">
+                    <i class="fas fa-user"></i>
+                </div>
+                <p>Password</p>
+                <div class="form-control">
+                    <input type="password" placeholder="">
+                    <i class="fas fa-lock"></i>
+                </div>
+                <input type="checkbox" id="check">
+                <label for="check">Remember me?</label>
+                  
+                <button class="submit"><a href="#">Sign In</a></button>   
+            </form>
+        </div>
+  </section>
+</body>
