@@ -8,7 +8,23 @@
   <link rel="stylesheet" href="style.css">
   <title>Checklist</title>
 </head>
+
+<!-- tps://www.w3schools.com/howto/howto_js_todolist.asp -->
+
 <body>
-  
+  <section class="container">
+      <div class="flexcontainer">
+        <h2>Complete your checklist</h2>
+      <div class="user-input">
+        <input id="input" placeholder="Enter your items here..." type="text"><button 
+         onclick="addItem()"><i class="fas fa-plus"></i></button>
+      </div>
+      </div>
+  </section>
+  <section class="container">
+    <div class="to-do-items"></div>
+  </section>
+
+  <script src="main.js"></script>
 </body>
 </html>
