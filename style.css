@@ -31,8 +31,7 @@ så er den brugt til at få logoet over billedet */
   margin-left: 2em;
 }
 
-/* Styling the input field */
-
+/* Input blokken styles */
 .user-input input{
   width: 60%;
   outline: none;
@@ -45,8 +44,8 @@ så er den brugt til at få logoet over billedet */
   border-bottom-right-radius: 1em;
 }
 
-/* Styling the input button */
-
+/* Input knappen styling, den har fået border på den ene side, så det hører sammen
+med søgeikonet */
 .user-input button{
   padding: 1.1em;
   width: fit-content;
@@ -61,23 +60,20 @@ så er den brugt til at få logoet over billedet */
 }
 
 
-/* The popup form - hidden by default */
+/* Pop-upp'et er skjult til at starte med */
 .form-popup {
   display: none;
-  bottom: 0;
-  right: 15px;
-  z-index: 9;
-  top: 0;
 }
 
-/* Add styles to the form container */
+/* Styler formens container */
 .container {
-  width: 100%;
-  height: 820px;
-  padding: 10px;
+  height: 100vh;
+  width: 100vh;
+  position: fixed;
+  bottom: 0;
+  left: 0;
   background-color: #AAB9BF;
-  position: relative;
-  margin-top: -73px;
+
 }
 
 .container input{
@@ -98,8 +94,13 @@ så er den brugt til at få logoet over billedet */
   cursor: pointer;
 }
 
-.close{
-  float: right;
+.close {
+  font-size: 1.5em;
+  margin: 1em 0 0 1em;
+}
+
+.button.open-btn {
+  font-size: 2em;
 }
 
 .open-btn{
