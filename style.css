@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+}
+
+div {
+  height: 100px;
+  width: 150px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.billede {
+  box-shadow: 5px 5px 2.5px rgb(173, 172, 172);
+}
+
+button {
+  margin-top: 10px;
+  background-color: white;
+  color: black;
+  border: 1px solid #000000;
+  border-radius: 8px;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 7px;
+  font-size: 16px;
+}
+
+p {
+  margin: 5px;
+  margin-left: 0;
+  font-size: 12px;
+  line-height: 15px;
+}
