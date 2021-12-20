@@ -141,6 +141,8 @@ i stedet for, hvilket anullerer dem der er der i forvejen */
 button {
   background: none;
   border: none;
+  font-size: 2em;
+  padding: 0.5em 2em 0 2em;
 }
 
 
@@ -148,7 +150,7 @@ button {
 
 /* Most popular indholdet, og alt der hører derindeunder der */
 .popular {
-  margin-top: 12%;
+  margin-top: 15%;
 }
 
 /* Alle h1'er ind under popular diven */
