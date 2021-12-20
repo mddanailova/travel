@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title> ONWAY </title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,7 +22,17 @@
           <div class="headertxt">
             <h1 class="maintxt">Discover, <br> organize & <br> structure your trip</h1>
             <h2 class="undermaintxt">Start planning your trip</h1>
-            <input type="text" class="searchbar" placeholder="Search all places">
+            <div class="user-input">
+              <button onclick="openForm()"><i class="fas fa-search"></i></button><input id="input" placeholder="SEARCH ALL PLACES" type="text">
+            </div>
+      <div class="form-popup" id="myForm">
+          <form class="container">
+      <div>
+          <button class="close" onclick="closeForm()"><i class="fas fa-times"></i></button>
+      </div>
+      <button class="open-btn" onclick="openForm()"><i class="fas fa-search"></i></button><input id="input" placeholder="SEARCH ALL PLACES" type="text">
+    </form>
+     </div>
           </div>
           <img src="billeder/7.jpg" class="mainimg">
       </header>
@@ -68,10 +78,10 @@
 <!-- Det er den sidste del af vores side, menuen https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_navbar_icon -->
     <nav>
       <div class="navbar">
-        <a class="active" href="#"><i class="fa fa-fw fa-home"></i></a>
-        <a href="https://mdanailova.com/travel/"><i class="fa fa-fw fa-search"></i></a>
-        <a href="#"><i class="fa fa-fw fa-envelope"></i></a>
-        <a href="#"><i class="fa fa-fw fa-user"></i></a>
+        <a class="active" href="https://mdanailova.com/travel/"><i class="fa fa-fw fa-home"></i></a>
+        <a href="#"><i class="fas fa-th-list"></i></a>
+        <a href="#"><i class="fas fa-utensils"></i></a>
+        <a href="#"><i class="fas fa-map-marked-alt"></i></a>
       </div>
   </nav>
 
@@ -97,6 +107,17 @@
       x[slideIndex-1].style.display = "block";
     }
     </script>
+
+    <script>
+    function openForm() {
+      document.getElementById("myForm").style.display = "block";
+    }
+
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
+  </script>
+
 
   </body>
 </html>

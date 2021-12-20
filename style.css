@@ -31,11 +31,79 @@ så er den brugt til at få logoet over billedet */
   margin-left: 2em;
 }
 
+/* Styling the input field */
 
-.searchbar {
-  padding: 0.3em;
-  border-radius: 25px;
-  font-size: 1.5em;
+.user-input input{
+  width: 60%;
+  outline: none;
+  padding: 1.1em;
+  background: #fff;
+  font-size: 0.8em;
+  color: #818C8A;
+  border: 1px solid #818C8A;
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+}
+
+/* Styling the input button */
+
+.user-input button{
+  padding: 1.1em;
+  width: fit-content;
+  outline: none;
+  border: 1px solid #818C8A;
+  border-top-left-radius: 1em;
+  border-bottom-left-radius: 1em;
+  background-color: #fff;
+  color: #AAB9BF;
+  cursor: pointer;
+  font-size: 0.8em;
+}
+
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  bottom: 0;
+  right: 15px;
+  z-index: 9;
+  top: 0;
+}
+
+/* Add styles to the form container */
+.container {
+  width: 100%;
+  height: 820px;
+  padding: 10px;
+  background-color: #AAB9BF;
+  position: relative;
+  margin-top: -73px;
+}
+
+.container input{
+  outline: none;
+  background-color: #AAB9BF;
+  border: none;
+  color: white;
+  border-bottom: 1px solid white;
+
+}
+
+.container button {
+  padding: 8px;
+  width: fit-content;
+  border: none;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+}
+
+.close{
+  float: right;
+}
+
+.open-btn{
+  margin: 5em 0 0 5.5em;
 }
 
 
@@ -121,6 +189,7 @@ at de andre elementer skal skubbe den derhen */
 .navbar {
   width: 100%;
   padding: 0.8em;
+  text-align: center;
   background-color: #73605c;
   overflow: auto;
   position: fixed;
