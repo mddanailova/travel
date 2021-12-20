@@ -14,6 +14,35 @@ body{
     background-position: center;
 }
 
+/*-- NAVIGATIONSBAREN STYLES HERUNDER --*/
+
+/* Navigationsbaren bliver stylet, her har jeg angivet bottom:0, så den er i bunden, i stedet for
+at de andre elementer skal skubbe den derhen */
+.navbar {
+  width: 100%;
+  padding: 0.8em;
+  text-align: center;
+  background-color: #73605c;
+  overflow: auto;
+  position: fixed;
+  bottom: 0;
+}
+
+/* Ikonernes styling, de er inde i et a tag, da de skal fungere som links, derfor er det a'et der bliver stylet */
+.navbar a {
+  text-align: center;
+  padding: 7.5%;
+  color: #F2EBDF;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+/* Angiver baggrundsfarven på det ikon, som man "befinder" sig på */
+.active {
+  background-color: #808080;
+}
+
+
 /* Adding width to container */
 
 .container{
@@ -33,7 +62,7 @@ body{
 }
 
 .flexcontainer h2{
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: white;
 }
 
